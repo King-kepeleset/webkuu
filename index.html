@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop DarkJenny</title>
+  <!-- Google Font & Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== OVERLAY POP-UP ===== -->
+  <div id="overlay">
+    <div id="popup-box">
+      <p id="popup-text">Oh Hey Apakah Kamu User Baru?</p>
+    </div>
+    <!-- Tombol Masuk akan muncul setelah semua pop-up selesai -->
+    <button id="btn-masuk" style="display: none;">Masuk</button>
+  </div>
+
+  <!-- ===== KONTEN UTAMA ===== -->
+  <div id="main-content" style="display: none;">
+    <header>
+      <h1>HAI USER NEW??, YEAH YOU, YOU, wait you know me? Yeah I'm Shop DarkJenny And Welcome Yeah</h1>
+    </header>
+
+    <nav class="main-nav">
+      <button class="nav-btn" data-target="home">🏠 Home</button>
+      <button class="nav-btn" data-target="cs">💬 CS</button>
+      <button class="nav-btn" data-target="shop">🛒 Shop</button>
+    </nav>
+
+    <!-- Bagian Home (default tampil) -->
+    <section id="home-section" class="section active">
+      <h2>Selamat datang kembali!</h2>
+      <p>Ini adalah toko DarkJenny – tempatnya panel, script, dan role premium.</p>
+      <p>Jelajahi menu di atas untuk informasi lebih lanjut.</p>
+    </section>
+
+    <!-- Bagian CS -->
+    <section id="cs-section" class="section">
+      <h2>Hubungi Customer Service</h2>
+      <p>Jika ada masalah atau pertanyaan, silakan hubungi kami di Telegram:</p>
+      <a href="https://t.me/cwoolo" target="_blank" class="telegram-link">
+        <i class="fab fa-telegram-plane"></i> t.me/cwoolo
+      </a>
+    </section>
+
+    <!-- Bagian Shop -->
+    <section id="shop-section" class="section">
+      <h2>🛍️ Produk Kami</h2>
+      <div class="shop-grid">
+
+        <!-- Item 1: Panel -->
+        <div class="shop-card modern-futuristic">
+          <h3>Panel</h3>
+          <p>1k Unli</p>
+          <p class="desc">Panel premium dengan kuota tak terbatas.</p>
+          <a href="https://t.me/cwoolo" target="_blank" class="shop-btn">Hubungi kami</a>
+        </div>
+
+        <!-- Item 2: Script -->
+        <div class="shop-card">
+          <h3>Script Premium</h3>
+          <p>Ingin buy Script premium???</p>
+          <a href="https://t.me/cwoolo" target="_blank" class="shop-btn">Hubungi Telegram</a>
+        </div>
+
+        <!-- Item 3: Role Panel -->
+        <div class="shop-card">
+          <h3>Role Panel</h3>
+          <ul class="role-list">
+            <li>Ress – 3k</li>
+            <li>Adp – 5k</li>
+            <li>PT – 7k</li>
+          </ul>
+          <p>Minat buy tekan ini 👇</p>
+          <a href="https://t.me/cwoolo" target="_blank" class="shop-btn">t.me/cwoolo</a>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
